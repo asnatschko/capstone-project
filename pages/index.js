@@ -4,11 +4,7 @@ import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
 
 export default function Home() {
-  return (
-    <div>
-      <Button>Click Me!</Button>
-    </div>
-  );
+  return <h1>Readme - App</h1>;
 }
 
 const Button = styled.button`
