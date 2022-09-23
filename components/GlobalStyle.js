@@ -10,8 +10,6 @@ const GlobalStyle = createGlobalStyle`
         text-align: center;
         margin: auto;
         width: 40vw;
-    
-        
     }
 
     div { 
@@ -20,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
         width: 400px;   
         display: grid;
         height: auto;
-        
     }
       
     
@@ -34,15 +31,11 @@ const GlobalStyle = createGlobalStyle`
         
         border: 2px solid whitesmoke;
         border-radius: 0 5px 0 5px;
-        
-        
-
     }
 
     ul{
         list-style: none;
-        padding: 0;
-        
+        padding: 0;  
     }
 
     li {
