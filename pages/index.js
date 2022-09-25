@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import styled from 'styled-components';
 import Card from '../components/Card';
+import Link from 'next/link';
 
 export default function Home() {
-  return <h1>ReadMe</h1>;
-}
+  return (
+    <>
+      <h1>Readme-App</h1>
 
-const Button = styled.button`
-  margin: 2rem;
-  background: yellow;
-  color: purple;
-`;
+      <Card />
+      <Link href="/nextstory">Next Story</Link>
+    </>
+  );
+}
