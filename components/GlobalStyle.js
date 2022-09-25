@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     li {
-        margin: ;
+        
     }
 
 
