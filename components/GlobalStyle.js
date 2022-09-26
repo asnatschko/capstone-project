@@ -13,22 +13,17 @@ const GlobalStyle = createGlobalStyle`
     }
 
     div { 
-    
-        margin-top: 0 auto;
         width: 400px;   
         display: grid;
         height: auto;
     }
-      
-    
 
     a {
         background-color: tomato;
         margin: 5px;
     }
 
-    article {
-        
+    article {   
         border: 2px solid whitesmoke;
         border-radius: 0 5px 0 5px;
     }
@@ -39,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     li {
+        list-style: none;
+        border: 2px solid gray;
+        border-radius: 10px 0 10px 0;
+        padding: 1rem;
         
     }
 
