@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <h1>Readme-App</h1>
 
-      <Card />
+      <Card content="Once upon a time there was a girl. She liked playing with her sister. And one day, when their parents were gone, they found a secret room in the house." />
       <Link href="/nextstory">Next Story</Link>
     </>
   );
