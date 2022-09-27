@@ -1,5 +1,11 @@
+import Link from 'next/link';
 
 export default function Footer() {
-   
-    return <footer>Impressum</footer>
-};
+  return (
+    <div>
+      <nav>
+        <footer href="/impressum">Impressum</footer>
+      </nav>
+    </div>
+  );
+}

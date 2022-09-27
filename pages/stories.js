@@ -1,5 +1,6 @@
 import Card from '../components/Card';
 import { nanoid } from 'nanoid';
+import styled from 'styled-components';
 
 const shortStories = [
   {
@@ -31,12 +32,23 @@ const shortStories = [
 export default function Stories() {
   return (
     <>
-      <h1>Stories</h1>
-      <ul>
-        {shortStories.map((story) => {
-          return <Card id={story.id} key={story.id} content={story.content} />;
-        })}
-      </ul>
+      <StoryContainer>
+        <div className="headline">Stories</div>
+        <div className="list">
+          <ul>
+            {shortStories.map((story) => {
+              return (
+                <Card id={story.id} key={story.id} content={story.content} />
+              );
+            })}
+          </ul>
+        </div>
+      </StoryContainer>
     </>
   );
 }
+
+const StoryContainer = styled.div`
+  width: 100%;
+  margin: 0 auto;
+`;

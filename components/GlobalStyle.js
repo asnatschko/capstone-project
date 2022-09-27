@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     *, *::after, *::before {
-        box-sizing: border-box
+        box-sizing: border-box;
+        
     }
 
     body {
@@ -13,14 +14,20 @@ const GlobalStyle = createGlobalStyle`
     }
 
     div { 
-        width: 400px;   
-        display: grid;
         height: auto;
     }
 
     a {
         background-color: tomato;
         margin: 5px;
+        border: none;
+        border-radius: 15%;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    footer{
+        margin-top: 10px;;
     }
 
     article {   
@@ -30,16 +37,27 @@ const GlobalStyle = createGlobalStyle`
 
     ul{
         list-style: none;
-        padding: 0;  
+        padding: 0;
     }
 
     li {
+        background-color: whitesmoke;
         list-style: none;
-        border: 2px solid gray;
+        border: 3px solid gray;
         border-radius: 10px 0 10px 0;
         padding: 1rem;
-        
+        margin-bottom: 20px;
     }
+
+    .list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .headline {
+        margin-top: 10px;
+    }
+  
 
 
 `;
