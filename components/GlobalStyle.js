@@ -55,7 +55,16 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .headline {
-        margin-top: 10px;
+        margin-top: 20px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .buttonBookmark{
+        position: relative;
+        top: 15px;
+        right: -150px;  
+        ;
     }
   
 
