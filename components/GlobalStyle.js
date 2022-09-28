@@ -64,11 +64,17 @@ const GlobalStyle = createGlobalStyle`
         position: relative;
         top: 15px;
         right: -150px;  
-        ;
+    }
+
+    .storyCard {
+        background-color: whitesmoke;
+        list-style: none;
+        border: 3px solid gray;
+        border-radius: 10px 0 10px 0;
+        padding: 1rem;
+        margin-top: 20px;
     }
   
-
-
 `;
 
 export default GlobalStyle;

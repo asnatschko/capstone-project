@@ -1,6 +1,6 @@
 import GlobalStyle from '../components/GlobalStyle';
 import Layout from '../components/Layout';
-import { BookmarksContextProvider } from '../components/use-bookmarks';
+import { BookmarksContextProvider } from '../hooks/use-bookmarks';
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -30,12 +30,6 @@ export const shortStories = [
 ];
 
 export default function Stories() {
-  // const [isActive, setIsActive] = useState();
-
-  // function handleClick() {
-  //   setIsActive(!isActive);
-  // }
-
   return (
     <>
       <StoryContainer>

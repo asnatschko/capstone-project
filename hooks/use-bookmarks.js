@@ -24,8 +24,6 @@ export function useBookmarks() {
     return state.includes(id);
   };
 
-  console.log(state);
-
   return {
     state,
     bookmarkStory,
