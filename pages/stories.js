@@ -1,8 +1,8 @@
 import Card from '../components/Card';
-import { nanoid } from 'nanoid';
 import styled from 'styled-components';
+import { useState } from 'react';
 
-const shortStories = [
+export const shortStories = [
   {
     id: 1,
     content:
@@ -22,7 +22,7 @@ const shortStories = [
     //isRead: false,
   },
   {
-    id: 3,
+    id: 4,
     content:
       'An old man was walking in a deep forest. He went the wrong way. Totally exhausted, he saw a bank and took a seat',
     //isRead: false,
