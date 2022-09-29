@@ -27,9 +27,16 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
-    footer{
-        margin-top: 30px;
+    img.active{
+        background-color: gray;
+        width: 30px;
     }
+
+    footer{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        }
 
     article {   
         border: 2px solid whitesmoke;
@@ -80,6 +87,8 @@ const GlobalStyle = createGlobalStyle`
     .img{
         cursor: pointer;
     }
+
+
 
     
 `;
