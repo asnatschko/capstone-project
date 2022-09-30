@@ -1,14 +1,8 @@
-import Link from 'next/link';
-
-export default function Navigation() {
+export default function Header() {
   return (
     <>
       <div>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/stories">Stories</Link>
-          <Link href="/profile">Profile</Link>
-        </nav>
+        <h1>Readme-App</h1>
       </div>
     </>
   );

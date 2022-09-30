@@ -24,11 +24,19 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 15%;
         padding: 5px;
         text-decoration: none;
+        cursor: pointer;
+    }
+
+    img.active{
+        background-color: gray;
+        width: 30px;
     }
 
     footer{
-        margin-top: 10px;;
-    }
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        }
 
     article {   
         border: 2px solid whitesmoke;
@@ -38,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
     ul{
         list-style: none;
         padding: 0;
+
     }
 
     li {
@@ -46,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
         border: 3px solid gray;
         border-radius: 10px 0 10px 0;
         padding: 1rem;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .list {
@@ -74,7 +83,14 @@ const GlobalStyle = createGlobalStyle`
         padding: 1rem;
         margin-top: 20px;
     }
-  
+
+    .img{
+        cursor: pointer;
+    }
+
+
+
+    
 `;
 
 export default GlobalStyle;
