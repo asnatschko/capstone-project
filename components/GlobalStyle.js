@@ -32,11 +32,15 @@ const GlobalStyle = createGlobalStyle`
         width: 30px;
     }
 
-    footer{
-        margin-top: 20px;
+    .footerBlock {
         display: flex;
-        justify-content: space-between;
-        }
+        justify-content: center;
+    }
+
+    nav{
+        bottom: 0;
+        position: fixed;
+    }
 
     article {   
         border: 2px solid whitesmoke;
@@ -56,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 10px 0 10px 0;
         padding: 1rem;
         margin-bottom: 0px;
+        cursor: pointer;
     }
 
     .list {
@@ -73,6 +78,13 @@ const GlobalStyle = createGlobalStyle`
         position: relative;
         top: 15px;
         right: -150px;  
+    }
+
+    @media (max-width: 767px)  {
+        .buttonBookmark {
+            top: 15px;
+            right: -80px; 
+        }
     }
 
     .storyCard {

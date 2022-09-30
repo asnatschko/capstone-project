@@ -13,45 +13,38 @@ export default function Footer() {
   };
 
   return (
-    <div>
+    <div className="footerBlock">
       <nav>
-        <footer>
-          <div>
-            <Link href="/">
-              {/* {isActive ? 'img.active' : 'img'} */}
-              <Image
-                className="img"
-                src={home}
-                alt="Home"
-                width="30"
-                height="30"
-                onClick={handleToggle}
-              />
-            </Link>
-          </div>
-          <Link href="/stories">
-            Stories
-            {/* <Image
-              className="img"
-              src={book}
-              alt="Book"
-              width="30"
-              height="30"
-              onClick={handleToggle}
-            /> */}
-          </Link>
-          <Link href="/profile">
-            Profile
-            {/* <Image
-              className="img"
-              src={profile}
-              alt="Book"
-              width="30"
-              height="30"
-              onClick={handleToggle}
-            /> */}
-          </Link>
-        </footer>
+        <Link href="/">
+          <Image
+            className="img"
+            src={home}
+            alt="Home"
+            width="30"
+            height="30"
+            onClick={handleToggle}
+          />
+        </Link>
+        <Link href="/stories">
+          <Image
+            className="img"
+            src={book}
+            alt="Book"
+            width="30"
+            height="30"
+            onClick={handleToggle}
+          />
+        </Link>
+        <Link href="/profile">
+          <Image
+            className="img"
+            src={profile}
+            alt="Book"
+            width="30"
+            height="30"
+            onClick={handleToggle}
+          />
+        </Link>
       </nav>
     </div>
   );
