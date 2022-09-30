@@ -100,7 +100,11 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
-
+    .playButton {
+        margin: 1rem;
+        border: none;
+        background-color: lightblue;
+    }
 
     
 `;
