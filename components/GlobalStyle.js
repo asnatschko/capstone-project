@@ -102,8 +102,8 @@ const GlobalStyle = createGlobalStyle`
 
     .playButton {
         margin: 1rem;
-        border: none;
         background-color: lightblue;
+        border: none;
     }
 
     

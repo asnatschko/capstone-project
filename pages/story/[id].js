@@ -20,7 +20,7 @@ export default function Page() {
         Bookmark: {bookmarks.isBookmarked(id) ? 'is set' : 'is not set'}
       </div>
       <button className="playButton">
-        <Image src={play} alt="play" width="50" height="50" />
+        <Image src={play} alt="play" width="32" height="32" />
       </button>
     </>
   );
