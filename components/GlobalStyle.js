@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     nav{
-        bottom: 5rem;
+        bottom: 0;
         position: fixed;
     }
 
@@ -78,6 +78,13 @@ const GlobalStyle = createGlobalStyle`
         position: relative;
         top: 15px;
         right: -150px;  
+    }
+
+    @media (max-width: 767px)  {
+        .buttonBookmark {
+            top: 15px;
+            right: -80px; 
+        }
     }
 
     .storyCard {
