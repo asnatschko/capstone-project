@@ -14,7 +14,7 @@ export default function Page() {
     <>
       <h1 className="headline">Selected Story</h1>
       <div className="storyCard">
-        Story [{id}]<div>{story?.content}</div>
+        Story-Nr. [{id}]<div>{story?.content}</div>
         Bookmark: {bookmarks.isBookmarked(id) ? 'is set' : 'is not set'}
       </div>
     </>

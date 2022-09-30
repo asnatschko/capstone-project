@@ -60,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 10px 0 10px 0;
         padding: 1rem;
         margin-bottom: 0px;
+        cursor: pointer;
     }
 
     .list {

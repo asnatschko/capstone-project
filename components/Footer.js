@@ -16,7 +16,6 @@ export default function Footer() {
     <div className="footerBlock">
       <nav>
         <Link href="/">
-          {/* {isActive ? 'img.active' : 'img'} */}
           <Image
             className="img"
             src={home}
