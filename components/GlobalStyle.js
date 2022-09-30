@@ -32,11 +32,15 @@ const GlobalStyle = createGlobalStyle`
         width: 30px;
     }
 
-    footer{
-        margin-top: 20px;
+    .footerBlock {
         display: flex;
-        justify-content: space-between;
-        }
+        justify-content: center;
+    }
+
+    nav{
+        bottom: 5rem;
+        position: fixed;
+    }
 
     article {   
         border: 2px solid whitesmoke;
