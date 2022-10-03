@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
 
     .headline {
         margin-top: 20px;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
     }
 
@@ -102,10 +102,21 @@ const GlobalStyle = createGlobalStyle`
 
     .playButton {
         margin: 1rem;
-        border: none;
         background-color: lightblue;
+        border: none;
+        cursor: pointer;
     }
 
+    .playingstory {
+        background-color: antiquewhite;
+        color: gray;
+        font-size: 40px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+
+    
     
 `;
 
