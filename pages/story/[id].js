@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { BookmarksContext } from '../../hooks/use-bookmarks';
 import play from '../../public/images/play.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   const router = useRouter();
@@ -19,9 +20,9 @@ export default function Page() {
         Story-Nr. [{id}]<div>{story?.content}</div>
         Bookmark: {bookmarks.isBookmarked(id) ? 'is set' : 'is not set'}
       </div>
-      <button className="playButton">
+      <Link className="playButton" href="/playedstory">
         <Image src={play} alt="play" width="32" height="32" />
-      </button>
+      </Link>
     </>
   );
 }
