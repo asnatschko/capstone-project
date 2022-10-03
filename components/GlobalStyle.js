@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
 
     .headline {
         margin-top: 20px;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
     }
 
@@ -104,6 +104,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 1rem;
         background-color: lightblue;
         border: none;
+        cursor: pointer;
     }
 
     
