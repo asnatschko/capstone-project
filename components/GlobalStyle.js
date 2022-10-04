@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         text-align: center;
         margin: auto;
         width: 40vw;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     div { 
@@ -114,6 +115,7 @@ const GlobalStyle = createGlobalStyle`
         text-align: center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 700;
+        border: 2px dotted gray;
     }
 
     
