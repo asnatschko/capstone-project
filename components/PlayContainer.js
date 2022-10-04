@@ -5,6 +5,13 @@ import { shortStories } from '../pages/stories.js';
 export default function PlayContainer() {
   // let playstory = shortStories.find((story) => story.id === id);
 
+  function getId(shortStories, id) {
+    let obj = shortStories.filter(function (val) {
+      return val.id === id;
+    });
+    return obj[0];
+  }
+
   return (
     <>
       <h2>Read and Listen</h2>
