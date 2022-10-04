@@ -20,7 +20,7 @@ export default function Page() {
         Story-Nr. [{id}]<div>{story?.content}</div>
         Bookmark: {bookmarks.isBookmarked(id) ? 'is set' : 'is not set'}
       </div>
-      <Link className="playButton" href="/playedstory">
+      <Link className="playButton" href={`/playedstory/${id}`}>
         <Image src={play} alt="play" width="32" height="32" />
       </Link>
     </>
