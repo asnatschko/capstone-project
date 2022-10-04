@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import PlayContainer from '../../components/PlayContainer';
 import { useRouter } from 'next/router';
 
-export default function playedstory() {
+export default function Playedstory() {
   const router = useRouter();
   const id = Number(router.query.id);
   if (!id) {

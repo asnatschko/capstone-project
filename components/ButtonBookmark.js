@@ -19,7 +19,7 @@ export default function ButtonBookmark({ id }) {
 
   return (
     <button className="buttonBookmark" onClick={toggleBookmark}>
-      <Image src={isBookmarked ? bookmark_filled : bookmark} />
+      <Image src={isBookmarked ? bookmark_filled : bookmark} alt="Bookmark" />
     </button>
   );
 }
