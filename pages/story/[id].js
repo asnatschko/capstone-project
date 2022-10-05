@@ -21,7 +21,7 @@ export default function Page() {
         Bookmark: {bookmarks.isBookmarked(id) ? 'is set' : 'is not set'}
       </div>
       <Link className="playButton" href={`/playedstory/${id}`}>
-        <Image src={play} alt="play" width="32" height="32" />
+        <Image className="img" src={play} alt="play" width="50" height="50" />
       </Link>
     </>
   );

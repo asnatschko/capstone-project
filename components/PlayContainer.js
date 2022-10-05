@@ -1,9 +1,8 @@
 import Typewriter from 'typewriter-effect';
-import { shortStories } from '../pages/stories';
-import { id } from '../pages/story/[id]';
+import { shortStories } from '../pages/stories.js';
 
-export default function PlayContainer() {
-  let playedstory = shortStories.find((story) => story.id === id);
+export default function PlayContainer({ storyId }) {
+  let playedstory = shortStories.find((story) => story.id === storyId);
   return (
     <>
       <h2>Read and Listen</h2>
@@ -12,14 +11,8 @@ export default function PlayContainer() {
           onInit={(typewriter) => {
             typewriter
               .pauseFor(1000)
-              .typeString('Once upon a time there was a girl.')
-              .pauseFor(500)
-              .typeString(' She liked playing with her sister.')
-              .pauseFor(500)
-              .typeString(
-                'And one day, when their parents were gone, they found a secret room in the house.'
-              )
-              .pauseFor(1000)
+              .typeString(playedstory.content)
+              .pauseFor(700)
               .start();
           }}
         />
