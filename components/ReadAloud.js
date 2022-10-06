@@ -12,5 +12,5 @@ export default function ReadAloud({ storyId }) {
   utterance.rate = 0.7;
   speechSynthesis.speak(utterance);
 
-  return <></>;
+  return;
 }
