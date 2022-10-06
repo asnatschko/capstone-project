@@ -1,4 +1,3 @@
-import Typewriter from 'typewriter-effect';
 import TypeWriterEffect from 'react-typewriter-effect';
 import { shortStories } from '../pages/stories.js';
 
