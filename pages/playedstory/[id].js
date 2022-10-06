@@ -12,7 +12,7 @@ export default function Playedstory() {
   return (
     <StoryContainer>
       <PlayContainer storyId={id} />
-      {/* <ReadAloud readstoryId={id}/> */}
+      <ReadAloud readstoryId={id} />
     </StoryContainer>
   );
 }
