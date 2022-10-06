@@ -1,7 +1,7 @@
 import { shortStories } from '../pages/stories';
 
-export default function ReadAloud({ storyId }) {
-  let speakedstory = shortStories.find((story) => story.id === storyId);
+export default function ReadAloud({ readstoryId }) {
+  let speakedstory = shortStories.find((story) => story.id === readstoryId);
   let utterance = new SpeechSynthesisUtterance(speakedstory.content);
 
   let voicesArray = speechSynthesis.getVoices();
