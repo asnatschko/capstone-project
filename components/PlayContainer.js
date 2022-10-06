@@ -10,13 +10,12 @@ export default function PlayContainer({ storyId }) {
       <h2>Read and Listen</h2>
       <div className="playingstory">
         <TypeWriterEffect
-          textStyle={{ fontFamily: 'Red Hat Display', fontSize: '12' }}
           startDelay={100}
           cursorColor="black"
           text={playedstory.content}
           typeSpeed={80}
         />
-        {/* { <Typewriter
+        {/* "I have to choose between Typewriter effects))"" { <Typewriter
           onInit={(typewriter) => {
             typewriter
               .pauseFor(1000)
