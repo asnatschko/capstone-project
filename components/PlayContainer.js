@@ -15,7 +15,7 @@ export default function PlayContainer({ storyId }) {
           text={playedstory.content}
           typeSpeed={80}
         />
-        {/* "I have to choose between Typewriter effects))"" { <Typewriter
+        {/* "I have to choose between Typewriter effects))" { <Typewriter
           onInit={(typewriter) => {
             typewriter
               .pauseFor(1000)
