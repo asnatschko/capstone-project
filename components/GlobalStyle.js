@@ -111,7 +111,7 @@ const GlobalStyle = createGlobalStyle`
     .playingstory {
         background-color: antiquewhite;
         color: gray;
-        font-size: 40px;
+        font-size: 25px;
         text-align: center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 700;

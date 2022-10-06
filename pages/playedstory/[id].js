@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import PlayContainer from '../../components/PlayContainer';
 import { useRouter } from 'next/router';
+import ReadAloud from '../../components/ReadAloud';
 
 export default function Playedstory() {
   const router = useRouter();
@@ -11,6 +12,7 @@ export default function Playedstory() {
   return (
     <StoryContainer>
       <PlayContainer storyId={id} />
+      <ReadAloud storyId={id}/>
     </StoryContainer>
   );
 }
