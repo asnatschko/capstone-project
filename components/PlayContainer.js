@@ -1,6 +1,6 @@
 import { shortStories } from '../pages/stories.js';
 import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';
+import Typewriter from 'typewriter-effect';
 
 export default function PlayContainer({ storyId }) {
   let playedstory = shortStories.find((story) => story.id === storyId);
@@ -9,7 +9,12 @@ export default function PlayContainer({ storyId }) {
     <>
       <h2>Read and Listen</h2>
       <div className="playingstory">
-        <Typewriter words={playedstory.content} typeSpeed={100} />
+        <Typewriter
+          options={{ delay: 65 }}
+          onInit={(typewriter) => {
+            typewriter.typeString(playedstory.content).start();
+          }}
+        />
       </div>
     </>
   );

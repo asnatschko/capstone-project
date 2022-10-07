@@ -9,7 +9,7 @@ export default function ReadAloud({ storyId }) {
 
   speechSynthesis.cancel();
   utterance.pitch = 1;
-  utterance.rate = 0.5;
+  utterance.rate = 1;
   speechSynthesis.speak(utterance);
 
   return;
