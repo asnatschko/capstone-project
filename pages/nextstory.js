@@ -9,7 +9,7 @@ export default function nextStory() {
     <>
       <StoryContainer>
         <h2>Other Story</h2>
-        <Card content={otherStory[0].content} id={otherStory[0].id} />
+        <Card content={otherStory[1].content} id={otherStory[1].id} />
       </StoryContainer>
     </>
   );

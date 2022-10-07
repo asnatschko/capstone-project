@@ -10,12 +10,12 @@ export const shortStories = [
   {
     id: 2,
     content:
-      "The sun is shining. Skies are blue. The ocean is rendering it's waves",
+      "The sun is shining. Skies are blue. The ocean is rendering it's waves.",
   },
   {
     id: 3,
     content:
-      'An old man was walking in a deep forest. He went the wrong way. Totally exhausted, he saw a bank and took a seat',
+      'An old man was walking in a deep forest. He went the wrong way. Totally exhausted, he saw a bank and took a seat.',
   },
 ];
 
