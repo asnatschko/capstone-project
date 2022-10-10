@@ -5,7 +5,7 @@ import StoryItem from '../components/StoryItem';
 import { useContext } from 'react';
 import { StoryContext, useStories } from './stories';
 
-export default function profile() {
+export default function Profile() {
   const {
     shortStories: storyList,
     addStory,
