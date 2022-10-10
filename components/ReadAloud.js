@@ -1,6 +1,8 @@
-import { shortStories } from '../pages/stories';
+import { StoryContext } from '../pages/stories';
+import { useContext } from 'react';
 
 export default function ReadAloud({ storyId }) {
+  const { shortStories } = useContext(StoryContext);
   let speakedstory = shortStories.find((story) => story.id === storyId);
   let utterance = new SpeechSynthesisUtterance(speakedstory.content);
 

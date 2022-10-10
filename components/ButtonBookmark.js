@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import bookmark from '../public/images/bookmark.png';
 import bookmark_filled from '../public/images/bookmark_filled.png';
 import { BookmarksContext } from '../hooks/use-bookmarks';

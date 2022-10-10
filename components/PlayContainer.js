@@ -1,8 +1,10 @@
-import { shortStories } from '../pages/stories.js';
-import React from 'react';
+import { StoryContext, useStories } from '../pages/stories.js';
+import React, { useContext } from 'react';
 import Typewriter from 'typewriter-effect';
 
 export default function PlayContainer({ storyId }) {
+  const { shortStories } = useContext(StoryContext);
+  console.log(shortStories);
   let playedstory = shortStories.find((story) => story.id === storyId);
 
   return (
