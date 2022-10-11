@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <StoryContainer>
         <h2>Welcome to the Readme-App!</h2>
-        <div className='intro'> Here you can read, create and listen your stories</div>
+        <div className='intro'> create, read and listen your stories</div>
       </StoryContainer>
     </>
   );
