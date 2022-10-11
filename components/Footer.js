@@ -2,6 +2,7 @@ import Link from 'next/link';
 import home from '../public/home.png';
 import Image from 'next/image';
 import profile from '../public/images/profile.png';
+import create from '../public/images/create-icon.png';
 import book from '../public/images/books.png';
 import { useState } from 'react';
 
@@ -42,8 +43,8 @@ export default function Footer() {
           <Link href="/profile">
             <Image
               className="img"
-              src={profile}
-              alt="Profile"
+              src={create}
+              alt="Create"
               width="30"
               height="30"
               onClick={handleToggle}

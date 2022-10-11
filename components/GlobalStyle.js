@@ -135,18 +135,40 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         display: flex;
         justify-content: center;
-        border: 2px solid gray;
+        border: gray;
         background-color: antiquewhite;
         color: grey;
-        height: 5rem;
+        height: 20rem;
         border-radius: 15px;
         width: auto;
         font-weight: 500;
         font-size: 30px;
     }
 
-    .inputStory {
+    .inputStory{
         
+        box-sizing: border-box;
+        border: none;
+        border-radius: 3px;
+        margin: 10px 0px 10px;
+        resize: none;
+        font-size: 24px;
+        line-height: 24px;
+        overflow: auto;
+        height: auto;
+        padding: 8px;
+        box-shadow: 0px 4px 10px -8px gray;
+    }
+
+    .AddButton{
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        border: none;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px -8px gray;
+        cursor: pointer;
     }
 `;
 
