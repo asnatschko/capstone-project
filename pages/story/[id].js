@@ -1,15 +1,16 @@
 import { useRouter } from 'next/router';
-import { shortStories } from '../stories';
 import { useContext } from 'react';
 import { BookmarksContext } from '../../hooks/use-bookmarks';
 import play from '../../public/images/play.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import { StoryContext } from '../stories';
 
 export default function Page() {
   const router = useRouter();
   const id = Number(router.query.id);
   const bookmarks = useContext(BookmarksContext);
+  const { shortStories, addStory } = useContext(StoryContext);
 
   let story = shortStories.find((story) => story.id === id);
 

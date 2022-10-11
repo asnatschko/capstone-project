@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        background-color: tomato;
+        
         margin: 5px;
         border: none;
         border-radius: 15%;
@@ -38,9 +38,16 @@ const GlobalStyle = createGlobalStyle`
         justify-content: center;
     }
 
+
     nav{
         bottom: 0;
         position: fixed;
+    }
+
+    .footer-div{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 10px;
     }
 
     article {   
@@ -117,9 +124,52 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         border: 2px dotted gray;
     }
+    
+    .removeButton {
+        background-color: tomato;
+        border: none;
+        border-radius: 25px 0 25px 4px;
+    }
+    
+    .intro {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border: gray;
+        background-color: antiquewhite;
+        color: grey;
+        height: 20rem;
+        border-radius: 15px;
+        width: auto;
+        font-weight: 500;
+        font-size: 30px;
+    }
 
-    
-    
+    .inputStory{
+        
+        box-sizing: border-box;
+        border: none;
+        border-radius: 3px;
+        margin: 10px 0px 10px;
+        resize: none;
+        font-size: 24px;
+        line-height: 24px;
+        overflow: auto;
+        height: auto;
+        padding: 8px;
+        box-shadow: 0px 4px 10px -8px gray;
+    }
+
+    .AddButton{
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        border: none;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px -8px gray;
+        cursor: pointer;
+    }
 `;
 
 export default GlobalStyle;

@@ -1,7 +1,8 @@
 import Card from '../components/Card';
 import styled from 'styled-components';
+import { createContext, useContext, useState } from 'react';
 
-export const shortStories = [
+const shortStories = [
   {
     id: 1,
     content:
@@ -19,7 +20,41 @@ export const shortStories = [
   },
 ];
 
+export function useStories() {
+  const [storyList, setStories] = useState(shortStories);
+
+  function addStory(newBlock) {
+    let shortStories = [...storyList];
+  
+    shortStories.push(newBlock);
+    setStories(shortStories);
+  }
+
+function removeStoryById(id) {
+    let index = storyList.findIndex((x) => x.id === id);
+    if (index >= 0) {
+      let shortStories = [...storyList];
+      shortStories = shortStories.splice(index, 1);
+    }
+    
+    setStories(shortStories);
+   
+  }
+
+  return { shortStories: storyList, addStory, removeStoryById };
+}
+
+export const StoryContext = createContext();
+
+export function StoryContextProvider({ children }) {
+  const stories = useStories();
+  return (
+    <StoryContext.Provider value={stories}>{children}</StoryContext.Provider>
+  );
+}
+
 export default function Stories() {
+  const { shortStories } = useContext(StoryContext);
   return (
     <>
       <StoryContainer>

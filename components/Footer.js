@@ -2,6 +2,7 @@ import Link from 'next/link';
 import home from '../public/home.png';
 import Image from 'next/image';
 import profile from '../public/images/profile.png';
+import create from '../public/images/create-icon.png';
 import book from '../public/images/books.png';
 import { useState } from 'react';
 
@@ -15,36 +16,41 @@ export default function Footer() {
   return (
     <div className="footerBlock">
       <nav>
-        <Link href="/">
-          <Image
-            className="img"
-            src={home}
-            alt="Home"
-            width="30"
-            height="30"
-            onClick={handleToggle}
-          />
-        </Link>
-        <Link href="/stories">
-          <Image
-            className="img"
-            src={book}
-            alt="Book"
-            width="30"
-            height="30"
-            onClick={handleToggle}
-          />
-        </Link>
-        <Link href="/profile">
-          <Image
-            className="img"
-            src={profile}
-            alt="Book"
-            width="30"
-            height="30"
-            onClick={handleToggle}
-          />
-        </Link>
+        <div className='footer-div'>
+          <Link href="/">
+            <Image
+              className="img"
+              src={home}
+              alt="Home"
+              width="30"
+              height="30"
+              onClick={handleToggle}
+            />
+          </Link>
+
+          <Link href="/stories">
+            <Image
+              className="img"
+              src={book}
+              alt="Stories"
+              width="30"
+              height="30"
+              onClick={handleToggle}
+            />
+          </Link>
+
+        
+          <Link href="/profile">
+            <Image
+              className="img"
+              src={create}
+              alt="Create"
+              width="30"
+              height="30"
+              onClick={handleToggle}
+            />
+          </Link>
+        </div>
       </nav>
     </div>
   );
