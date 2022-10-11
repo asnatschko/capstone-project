@@ -31,7 +31,7 @@ export default function Footer() {
             <Image
               className="img"
               src={book}
-              alt="Book"
+              alt="Stories"
               width="30"
               height="30"
               onClick={handleToggle}
@@ -43,7 +43,7 @@ export default function Footer() {
             <Image
               className="img"
               src={profile}
-              alt="Book"
+              alt="Profile"
               width="30"
               height="30"
               onClick={handleToggle}
