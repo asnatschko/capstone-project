@@ -12,7 +12,7 @@ export default function StoryForm({ countStories, onAddStory }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="inputForm" onSubmit={handleSubmit}>
       <label htmlFor="Content">Add another Story</label>
       <br />
       <textarea className="inputStory" type="textarea" name="content" id="content" />

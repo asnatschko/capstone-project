@@ -18,8 +18,7 @@ const GlobalStyle = createGlobalStyle`
         height: auto;
     }
 
-    a {
-        
+    a {     
         margin: 5px;
         border: none;
         border-radius: 15%;
@@ -41,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
 
     nav{
         bottom: 0;
+        padding: 5px;
         position: fixed;
     }
 
@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         gap: 20px;
         margin-bottom: 10px;
+        padding-top: 5px;
     }
 
     article {   
@@ -58,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     ul{
         list-style: none;
         padding: 0;
-
+        margin-bottom: 40px;
     }
 
     li {
@@ -69,11 +70,14 @@ const GlobalStyle = createGlobalStyle`
         padding: 1rem;
         margin-bottom: 0px;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
     }
 
     .list {
         display: flex;
         justify-content: center;
+        margin-bottom: 25px;
     }
 
     .headline {
@@ -92,6 +96,9 @@ const GlobalStyle = createGlobalStyle`
         .buttonBookmark {
             top: 15px;
             right: -80px; 
+        }
+        .inputForm{
+            display: grid;
         }
     }
 
@@ -126,9 +133,13 @@ const GlobalStyle = createGlobalStyle`
     }
     
     .removeButton {
-        background-color: tomato;
+        display: grid;
+        align-items: flex-end;
         border: none;
-        border-radius: 25px 0 25px 4px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: lightblue;
     }
     
     .intro {
@@ -149,7 +160,7 @@ const GlobalStyle = createGlobalStyle`
         
         box-sizing: border-box;
         border: none;
-        border-radius: 3px;
+        border-radius: 5px;
         margin: 10px 0px 10px;
         resize: none;
         font-size: 24px;
@@ -158,6 +169,10 @@ const GlobalStyle = createGlobalStyle`
         height: auto;
         padding: 8px;
         box-shadow: 0px 4px 10px -8px gray;
+    }
+
+    .trash{
+        display: flex;
     }
 
     .AddButton{
@@ -169,6 +184,10 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 20px;
         box-shadow: 0px 4px 10px -8px gray;
         cursor: pointer;
+    }
+
+    label {
+        padding: 10px;
     }
 `;
 
