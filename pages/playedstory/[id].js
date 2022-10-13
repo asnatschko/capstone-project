@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import PlayContainer from '../../components/PlayContainer';
 import { useRouter } from 'next/router';
 import ReadAloud from '../../components/ReadAloud';
+import Typewriter from 'typewriter-effect';
 
 export default function Playedstory() {
   const router = useRouter();
@@ -9,6 +10,9 @@ export default function Playedstory() {
   if (!id) {
     return 'Loading...';
   }
+
+
+
   return (
     <StoryContainer>
       <PlayContainer storyId={id} />
