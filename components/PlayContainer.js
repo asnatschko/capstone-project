@@ -33,8 +33,8 @@ export default function PlayContainer({ storyId }) {
             bla(typewriter)
           }}
         />
-        <button onClick={stop}>Pause</button>
-        <button onClick={play}>Continue</button>
+          <button className="button" onClick={stop}>Pause</button>
+          <button className="button" onClick={play}>Continue</button>
       </div>
     </>
   );
