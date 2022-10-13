@@ -27,8 +27,8 @@ https://user-images.githubusercontent.com/98124965/195702315-9f547ed6-6aab-4bfa-
 
 ## How to set it up
 
-clone this repository
-install all npm dependencies
-npm install
-to run the app in development mode npm run dev, then open http://localhost:3000 to view it in the browser
-to create a build ready for deploying: npm run build
+- clone this repository
+- install all npm dependencies
+- npm install
+- to run the app in development mode npm run dev, then open http://localhost:3000 to view it in the browser
+- to create a build ready for deploying: npm run build
