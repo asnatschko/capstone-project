@@ -31,14 +31,8 @@ export function useStories() {
   }
 
 function removeStoryById(id) {
-    let index = storyList.findIndex((x) => x.id === id);
-    if (index >= 0) {
-      let shortStories = [...storyList];
-      shortStories = shortStories.splice(index, 1);
-    }
-    
-    setStories(shortStories);
-   
+    setStories(storyList.filter (x => x.id !== id))
+
   }
 
   return { shortStories: storyList, addStory, removeStoryById };

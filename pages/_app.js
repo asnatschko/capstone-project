@@ -2,6 +2,8 @@ import GlobalStyle from '../components/GlobalStyle';
 import Layout from '../components/Layout';
 import { BookmarksContextProvider } from '../hooks/use-bookmarks';
 import { StoryContextProvider } from './stories';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +12,7 @@ function MyApp({ Component, pageProps }) {
         <StoryContextProvider>
           <GlobalStyle />
           <Layout>
+            <ToastContainer/>
             <Component {...pageProps} />
           </Layout>
         </StoryContextProvider>

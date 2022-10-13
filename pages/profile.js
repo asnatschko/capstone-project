@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { useState } from 'react';
 import StoryForm from '../components/StoryForm';
 import StoryItem from '../components/StoryItem';
 import { useContext } from 'react';
-import { StoryContext, useStories } from './stories';
+import { StoryContext } from './stories';
 
 export default function Profile() {
   const {
@@ -18,17 +17,18 @@ export default function Profile() {
         <h2>Personal Stories</h2>
 
         <StoryForm countStories={storyList.length} onAddStory={addStory} />
-
-        <ul>
-          {storyList.map((story) => (
-            <StoryItem
-              id={story.id}
-              key={story.id}
-              content={story.content}
-              onRemoveStory={removeStoryById}
-            />
-          ))}
-        </ul>
+        <div className='list'>
+          <ul>
+            {storyList.map((story) => (
+              <StoryItem
+                id={story.id}
+                key={story.id}
+                content={story.content}
+                onRemoveStory={removeStoryById}
+              />
+            ))}
+          </ul>
+        </div>
       </StoryContainer>
     </>
   );
@@ -36,5 +36,6 @@ export default function Profile() {
 
 const StoryContainer = styled.div`
   width: 100%;
+  height: auto;
   margin: 0 auto;
 `;
