@@ -9,7 +9,9 @@ This app is optimized for mobile usage, so please switch your browser to respons
 
 ## App Impressions
 
-Videooooo
+
+https://user-images.githubusercontent.com/98124965/195702315-9f547ed6-6aab-4bfa-bc5e-30dc9caaf9c7.mov
+
 
 ## Tech Stack
 
