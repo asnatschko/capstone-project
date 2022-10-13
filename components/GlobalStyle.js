@@ -189,6 +189,15 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    .button {
+        border: none;
+        margin: 5px;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px -8px gray;
+        cursor: pointer;
+    }
+
     label {
         padding: 10px;
     }
