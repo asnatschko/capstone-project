@@ -6,7 +6,9 @@ export default function StoryItem({ id, content, onRemoveStory }) {
   return (
     <div className="list">
       <Link href={`/story/${id}`}>
-        <li>{content}</li>
+        <li>
+          <div className='media'>{content}</div>
+        </li>
       </Link>
       <div className="trash">
         <button className="removeButton" onClick={() => onRemoveStory(id)}>

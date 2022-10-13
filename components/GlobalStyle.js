@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: lightblue;
         text-align: center;
         margin: auto;
-        width: 40vw;
+        width: 75vw;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
@@ -93,12 +93,16 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media (max-width: 767px)  {
+        
         .buttonBookmark {
             top: 15px;
             right: -80px; 
         }
         .inputForm{
             display: grid;
+        }
+        .media{
+            padding: 10px;
         }
     }
 
@@ -133,8 +137,7 @@ const GlobalStyle = createGlobalStyle`
     }
     
     .removeButton {
-        display: grid;
-        align-items: flex-end;
+        display: flex;
         border: none;
         width: 35px;
         height: 35px;
