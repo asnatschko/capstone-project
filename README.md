@@ -9,8 +9,10 @@ This app is optimized for mobile usage, so please switch your browser to respons
 
 ## App Impressions
 
+<img width="1155" alt="Screenshot 2022-10-14 at 11 00 47" src="https://user-images.githubusercontent.com/98124965/195808019-604035c7-2745-492c-95eb-47960c86d4f8.png">
 
-https://user-images.githubusercontent.com/98124965/195702315-9f547ed6-6aab-4bfa-bc5e-30dc9caaf9c7.mov
+
+[!Readme-Video](https://user-images.githubusercontent.com/98124965/195802208-ab597851-0c8e-4337-8d55-0698f14b9a8d.mp4)
 
 
 ## Tech Stack
