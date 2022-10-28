@@ -7,7 +7,7 @@ export default function ReadAloud({ storyId }) {
   let utterance = new SpeechSynthesisUtterance(speakedstory.content);
 
   let voicesArray = speechSynthesis.getVoices();
-  utterance.voice = voicesArray[7];
+  utterance.voice = voicesArray[6];
 
   speechSynthesis.cancel();
   utterance.pitch = 1;
